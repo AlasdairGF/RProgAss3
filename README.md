@@ -7,8 +7,10 @@ My solution & associated files for Ass3. Includes:
 - README.md (this file)
 - Hospital_Revised_Flatfiles.pdf - the code book
 - rprog-doc-ProgAssignment3.pdf - Assignment instructions
+- Ass3.R - R functions best(), rankhospital() and rankall(); my actual assignment...!
 
 Submission script for testing this is at:  
 `source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript3.R")`
+
 To execute the submission script: `submit()`. 
 
