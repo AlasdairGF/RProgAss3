@@ -23,26 +23,10 @@ best <- function(state="ZZ", outcome="blank") {
       
       ## ok quitting here for now.
       data<-data[data$State == state,] # choose only relev state
-      if (outcome == "heart attack") data <- data[order(data$ha, decreasing=T),]
-      if (outcome == "heart failure") data <- data[order(data$hf, decreasing=T),]
-      if (outcome == "pneumonia")  data <- data[order(data$pn, decreasing=T),]
+      if (outcome == "heart attack") data <- data[order(data$ha),]
+      if (outcome == "heart failure") data <- data[order(data$hf),]
+      if (outcome == "pneumonia")  data <- data[order(data$pn),]
       
+      # head(data) # for checking
       as.character(data[1,1])
-}
-
-## Part Three
-rankhospital <- function(state, outcome, num = "best") {
-      ## Read outcome data
-      ## Check that state and outcome are valid
-      ## Return hospital name in that state with the given rank
-      ## 30-day death rate
-}
-
-## Part Four
-rankall <- function(outcome, num = "best") {
-      ## Read outcome data
-      ## Check that state and outcome are valid
-      ## For each state, find the hospital of the given rank
-      ## Return a data frame with the hospital names and the
-      ## (abbreviated) state name
 }
